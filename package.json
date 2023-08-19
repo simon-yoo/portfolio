@@ -39,7 +39,7 @@
     "prettier": "2.6.1",
     "react": "^18.0.2",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
+    "react-router-dom": "^6.15.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
     "vitest": "^0.34.1"
@@ -48,5 +48,11 @@
     "semi": false,
     "singleQuote": true
   },
-  "browserslist": "> 2%, not dead"
+  "browserslist": "> 2%, not dead",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "react-icons": "^4.10.1"
+  }
 }

@@ -1,0 +1,104 @@
+body {
+  background-color: #faf8f1;
+  color: #0a1520;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #403d39;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.home-link {
+  margin-right: 10%;
+  font-size: 20px;
+  font-weight: 100;
+  color: #faf8f1;
+  text-decoration: none;
+}
+
+.projects-link {
+  margin-right: 10%;
+  font-size: 20px;
+  font-weight: 100;
+  color: #faf8f1;
+  text-decoration: none;
+}
+
+.contact-link {
+  font-size: 20px;
+  font-weight: 100;
+  color: #faf8f1;
+  text-decoration: none;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.profile-left {
+  margin-left: 200px;
+}
+
+.profile-right {
+  margin-right: 200px;
+}
+.profile-img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 100px 10px 5px #ccc;
+  -webkit-box-shadow: 50px 100px 50px #ccc;
+  -khtml-box-shadow: 10px 10px 10px #ccc;
+}
+
+.icon-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.skill {
+  margin: 3%;
+}
+hr {
+  width: 80%;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 3%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* margin: 0px 200px 50px 200px; */
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
