@@ -20,6 +20,7 @@ body {
   background-color: #403d39;
   padding-top: 10px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .home-link {
@@ -28,6 +29,26 @@ body {
   font-weight: 100;
   color: #faf8f1;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.home-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #faf8f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.home-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .projects-link {
@@ -36,6 +57,26 @@ body {
   font-weight: 100;
   color: #faf8f1;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.projects-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #faf8f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.projects-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .contact-link {
@@ -43,7 +84,30 @@ body {
   font-weight: 100;
   color: #faf8f1;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
+.contact-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #faf8f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.contact-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ----------------------------------- */
+/* profile */
+/* ----------------------------------- */
 
 .profile {
   display: grid;
@@ -81,13 +145,68 @@ hr {
   width: 80%;
 }
 
+/* ----------------------------------- */
+/* footer */
+/* ----------------------------------- */
+
 .icon-links {
   display: flex;
   justify-content: center;
 }
 
 .icon {
-  margin: 3%;
+  margin: 2%;
+  padding: 1%;
+}
+
+.icon-links a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.icon-links a span {
+  transition: transform 0.2s ease-out;
+  color: #403d39;
+  text-transform: uppercase;
+}
+
+.icon-links a span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+
+.icon-links a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.icon-links i {
+  font-size: 30px;
+}
+
+.icon-links a:hover span:first-child {
+  transform: translateY(200%);
+}
+
+.icon-links a:hover span:last-child,
+.icon-links[data-animation] a:hover span:last-child {
+  transform: none;
+}
+
+.icon-links[data-animation='to-top'] a span:last-child {
+  transform: translateY(100%);
+}
+
+.icon-links[data-animation='to-top'] a:hover span:first-child {
+  transform: translateY(-100%);
 }
 
 .about-me {
@@ -98,7 +217,85 @@ hr {
   /* margin: 0px 200px 50px 200px; */
 }
 
-h3 {
-  font-size: 30px;
+h1 {
+  font-size: 50px;
   font-weight: 600;
+}
+
+/* ----------------------------------- */
+/* Contact */
+/* ----------------------------------- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-header {
+  margin: 3%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 700px;
+  margin-left: 700px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.form-name {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #e9ecef;
+}
+
+.form-name[type='text'] {
+  font-size: 18px;
+}
+
+.form-email {
+  border: 1px solid #e9ecef;
+
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #e9ecef;
+}
+.form-email[type='text'] {
+  font-size: 18px;
+}
+
+.form-msg {
+  border: 1px solid #e9ecef;
+
+  border-radius: 8px;
+  padding: 10px;
+  height: 300px;
+  text-align: start;
+  background-color: #e9ecef;
+  margin-top: 10px;
+}
+.form-msg {
+  font-size: 18px;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  margin: 5%;
+}
+
+.button-send {
+  padding: 15px 35px;
+}
+
+.button-send:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.8s;
 }
