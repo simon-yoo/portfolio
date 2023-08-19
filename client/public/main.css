@@ -15,8 +15,8 @@ body {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 10%;
+  margin-left: 10%;
   background-color: #403d39;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -105,6 +105,12 @@ body {
   transform-origin: bottom left;
 }
 
+/* @media (width: 875px) {
+  .nav-links {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+} */
 /* ----------------------------------- */
 /* profile */
 /* ----------------------------------- */
@@ -222,6 +228,10 @@ h1 {
   font-weight: 600;
 }
 
+p {
+  letter-spacing: 3px;
+}
+
 /* ----------------------------------- */
 /* Contact */
 /* ----------------------------------- */
@@ -240,8 +250,8 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-right: 700px;
-  margin-left: 700px;
+  margin-right: 30%;
+  margin-left: 30%;
 }
 
 input {
@@ -261,7 +271,6 @@ input {
 
 .form-email {
   border: 1px solid #e9ecef;
-
   border-radius: 8px;
   padding: 10px;
   background-color: #e9ecef;
@@ -272,7 +281,6 @@ input {
 
 .form-msg {
   border: 1px solid #e9ecef;
-
   border-radius: 8px;
   padding: 10px;
   height: 300px;
@@ -287,7 +295,7 @@ input {
 .button {
   display: flex;
   justify-content: end;
-  margin: 5%;
+  margin: 30px 10px 80px 10px;
 }
 
 .button-send {
@@ -298,4 +306,18 @@ input {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.8s;
+}
+
+/* @media (max-width: 1700px) {
+  .form {
+    margin-right: 27%;
+    margin-left: 27%;
+  }
+} */
+
+@media (max-width: 1000px) {
+  .form {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
