@@ -2,6 +2,8 @@ import {AiOutlineInstagram, AiOutlineLinkedin, AiOutlineFacebook,AiOutlineGithub
 
 import { NavLink, Outlet } from 'react-router-dom'
 
+
+
 function Layout() {
   return (
     <div>
@@ -21,6 +23,8 @@ function Layout() {
      <a className="icon" href="https://www.facebook.com/yoosghn0"><span><AiOutlineFacebook size={30} color={'#424445'}/></span><span>Facebook</span></a>
      </div>
     </div>
+    
+    
   )
 }
 
