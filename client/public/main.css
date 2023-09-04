@@ -11,33 +11,84 @@ body {
   height: 150px;
 }
 
+.main-logo {
+  color: #faf8f1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #403d39;
+  height: 8vh;
+}
+
 .nav-links {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  width: 40%;
   list-style-type: none;
-  margin-right: 150px;
-  margin-left: 150px;
-  background-color: #403d39;
   padding-top: 10px;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
+.burger {
+  display: none;
+}
+.burger div {
+  width: 30px;
+  height: 3px;
+  background-color: #faf8f1;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    right: 8px;
+    height: 50vh;
+    top: 7vh;
+    background-color: #403d39;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 .home-link {
-  margin-right: 10%;
   font-size: 20px;
   font-weight: 100;
   color: #faf8f1;
   text-decoration: none;
   display: inline-block;
   position: relative;
+  letter-spacing: 3px;
 }
 
 .home-link:after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 70%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
@@ -53,19 +104,19 @@ body {
 }
 
 .projects-link {
-  margin-right: 10%;
   font-size: 20px;
   font-weight: 100;
   color: #faf8f1;
   text-decoration: none;
   display: inline-block;
   position: relative;
+  letter-spacing: 3px;
 }
 
 .projects-link:after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 70%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
@@ -87,11 +138,12 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
+  letter-spacing: 3px;
 }
 .contact-link:after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 70%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
@@ -338,12 +390,12 @@ input {
   h1 {
     font-size: 60px;
   }
-  p {
+  /* p {
     font-size: 22px;
-  }
-  li {
+  } */
+  /* li {
     font-size: 30px;
-  }
+  } */
 }
 
 @media (max-width: 1400px) {
