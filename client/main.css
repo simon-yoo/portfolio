@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color: #faf8f1;
   color: #0a1520;
   font-family: 'Bricolage Grotesque', sans-serif;
   font-family: 'Playfair Display', serif;
   height: 100vh;
+  width: 100vw;
 }
 
 .logo {
@@ -16,14 +21,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  margin-left: 40px;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #403d39;
   height: 8vh;
+  margin: 10px;
 }
 
 .nav-links {
@@ -31,12 +38,10 @@ body {
   justify-content: space-around;
   width: 40%;
   list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-.burger {
+/* .burger {
   display: none;
 }
 .burger div {
@@ -46,34 +51,82 @@ body {
   margin: 5px;
 }
 
+.burger-icon {
+  display: none;
+  margin-right: 40px;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .burger-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1101px) {
+  .close-icon {
+    display: none;
+  }
+}
 @media screen and (max-width: 1100px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-links {
     position: absolute;
-    width: 100%;
-    right: 8px;
-    height: 50vh;
-    top: 7vh;
+    top: 50px;
+    right: 10px;
+    height: 50%;
+    width: 40%;
     background-color: #403d39;
+    opacity: 0.5;
     display: flex;
     flex-direction: column;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    align-items: center;
+    transform: translateX(110%);
   }
 
-  .nav-active {
+  .nav-links.open {
     transform: translateX(0%);
+    padding: 0;
   }
-  .nav-links li {
-    opacity: 0;
-  }
+
   .burger {
     display: block;
     cursor: pointer;
   }
 }
+
+.burger-icon.hide,
+.close-icon.hide {
+  display: none;
+}
+
+.close-icon:focus {
+  outline: none;
+}
+
+.close-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.close-icon:focus {
+  outline: none;
+} */
 
 .home-link {
   font-size: 20px;
