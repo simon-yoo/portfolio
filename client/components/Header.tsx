@@ -1,44 +1,49 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { RxCross2 } from 'react-icons/rx'
+import Menu from './Menu'
 
 const Header: React.FC = () => {
   const [navOpened, setNavOpened] = useState(false)
+
   function toggleMenu() {
     setNavOpened((prevNavOpened) => !prevNavOpened)
   }
-  return (
-    <nav className="nav-container">
-      <div className="main-logo">Logo</div>
 
-      <div className="absolute z-50 pl-4 pt-3 pr-4 flex justify-between items-center">
+  return (
+    <>
+      <div className="hidden lg:block bg-browny">
+        <Menu toggleMenu={toggleMenu} />
+      </div>
+      <div className="w-screen flex justify-end">
         {!navOpened && (
-          <div>
+          <div className="">
             <button
-              className="fixed top-10 text-[10px] right-10 hover:scale-125 ease-in duration-100 hover:text-blue-400"
+              className="m-8 text-4xl hover:text-5xl hover:text-browny lg:hidden"
               onClick={toggleMenu}
             >
-              <i className="fa-solid  fa-bars absolute top-0 right-0 h-10 w-10"></i>
+              <GiHamburgerMenu />
             </button>
           </div>
         )}
         {navOpened && (
           <button
-            className="fixed top-10 right-10 hover:text-blue-400 hover:scale-125 ease-in duration-100"
+            className="m-8 text-4xl hover:text-5xl hover:text-browny lg:hidden"
             onClick={toggleMenu}
           >
-            <i className="fa-solid fa-times text-3xl transition ease-in-out focus:-rotate-45 duration-300 absolute top-0 right-0 h-10 w-10"></i>
+            <RxCross2 />
           </button>
         )}
-
-        <nav
-          className={`text-orange fixed right-20 hover:scale-125 ease-in duration-100 top-[100px] h-0  backdrop-filter backdrop-blur-md bg-opacity-5 shadow-transparent transition-all ease-in-out duration-200 ${
-            navOpened ? 'opacity-100' : 'hidden'
-          }`}
-        >
-          <Nav toggleMenu={toggleMenu} />
-        </nav>
       </div>
-    </nav>
+      <div
+        className={`flex justify-end mr-10 top-0 ${
+          navOpened ? 'lg:hidden' : 'hidden'
+        }`}
+      >
+        <Nav toggleMenu={toggleMenu} />
+      </div>
+    </>
   )
 }
 

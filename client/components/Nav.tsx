@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+// Import Tailwind CSS in your main TypeScript file
 
 interface Props {
   toggleMenu: () => void
@@ -13,35 +14,27 @@ function Nav(props: Props) {
   }
 
   return (
-    <nav className=" p-10 flex 2-[250px] lg:w-[300px] rounded-md bg-blue-100 ">
-      <ul className="text-xl w-full lg:text-2xl">
-        <li>
-          <button
-            className="text-black font-bold hover:scale-125 ease-in duration-100 hover:max-w-full h-0.5  hover:text-blue-400 mb-2"
-            onClick={() => goTo('/')}
-          >
-            Home
-          </button>
-        </li>
-        <li>
-          <button
-            className="text-black font-bold hover:scale-125 ease-in duration-100 hover:max-w-full h-0.5  hover:text-blue-400 mb-2"
-            onClick={() => goTo('/projects')}
-          >
-            Projects
-          </button>
-        </li>
-        <li>
-          <button
-            className="text-black font-bold hover:scale-125 ease-in duration-100 hover:max-w-full h-0.5  hover:text-blue-400 mb-2"
-            onClick={() => goTo('/contact')}
-          >
-            Contact
-          </button>
-        </li>
-      </ul>
-      <div className="flex w-[50px] text-black justify-end"></div>
-    </nav>
+    <>
+      <nav className="w-[300px] text-d_color bg-browny h-[300px] rounded-lg shadow-2xl">
+        <ul className="w-full h-full flex flex-col items-center justify-around text-2xl">
+          <li className=" hover:text-3xl duration-300 link link-underline link-underline-black">
+            <button className=" " onClick={() => goTo('/')}>
+              Home
+            </button>
+          </li>
+          <li className=" hover:text-3xl duraion-300 link link-underline link-underline-black">
+            <button className="" onClick={() => goTo('/projects')}>
+              Projects
+            </button>
+          </li>
+          <li className=" hover:text-3xl duraion-300 link link-underline link-underline-black">
+            <button className="" onClick={() => goTo('/contact')}>
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </>
   )
 }
 
