@@ -6,7 +6,7 @@ function Home() {
     <div>
       <div className="profile">
         <div className="profile-left ">
-          <img className="profile-img" src="/public/images/Y.png" alt="" />
+          <img className="profile-img" src="/images/Y.png" alt="" />
         </div>
         <div className="profile-right">
           <div className="about-me">
