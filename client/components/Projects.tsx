@@ -55,7 +55,7 @@ function Projects() {
             repo="https://github.com/simon-yoo/gym"
           />
           <p className="text-lg md:text-xl">
-            My team final project built within a week at Dev Academy.
+            My personal front-end project - world franchise gym website.
           </p>
         </div>
       </div>
