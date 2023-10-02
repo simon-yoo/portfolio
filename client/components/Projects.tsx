@@ -51,7 +51,7 @@ function Projects() {
             title="World GYM"
             img="/images/world-gym.png"
             tech="React"
-            link="https://wardrobe-wonders.onrender.com/"
+            link="https://gym-tau-nine.vercel.app/"
             repo="https://github.com/simon-yoo/gym"
           />
           <p className="text-lg md:text-xl">
