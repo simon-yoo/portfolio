@@ -8,7 +8,7 @@ function Projects() {
         <div className="flex rounded-lg justify-center items-center border-4 p-4 w-[150px] border-browny cursor-pointer duration-700 hover:scale-110 hover:bg-browny hover:text-d_color my-[100px]">
           <Link
             download="simon-cv.pdf"
-            to="/public/simon-cv.pdf"
+            to="/simon-cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -37,7 +37,7 @@ function Projects() {
         <div className="flex flex-col w-[600px] lg:w-[1000px] rounded-xl cursor-pointer hover:scale-105 m-10 items-center border-2 shadow-2xl p-10 justify-center ">
           <Project
             title="Wardrobe Wonders"
-            img="/public/images/wa-wo.png"
+            img="/images/wa-wo.png"
             tech="React"
             link="https://wardrobe-wonders.onrender.com/"
             repo="https://github.com/matai-2023/wa-wo"
@@ -49,7 +49,7 @@ function Projects() {
         <div className="flex flex-col w-[600px] lg:w-[1000px] rounded-xl cursor-pointer hover:scale-105 m-10 items-center border-2 shadow-2xl p-10 justify-center ">
           <Project
             title="World GYM"
-            img="/public/images/world-gym.png"
+            img="/images/world-gym.png"
             tech="React"
             link="https://wardrobe-wonders.onrender.com/"
             repo="https://github.com/simon-yoo/gym"
