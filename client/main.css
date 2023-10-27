@@ -36,9 +36,6 @@ body {
   margin: 50px;
 }
 
-.profile-right {
-  width: 750px;
-}
 .profile-img {
   width: 600px;
   border-radius: 50%;
@@ -127,13 +124,12 @@ hr {
   transform: translateY(-100%);
 }
 
-.about-me {
+/* .about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* margin: 0px 200px 50px 200px; */
-}
+margin: 0px 200px 50px 200px;} */
 
 h1 {
   font-size: 50px;
@@ -141,6 +137,7 @@ h1 {
 }
 
 p {
+  display: flex;
   letter-spacing: 3px;
   font-size: 25px;
 }

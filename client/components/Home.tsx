@@ -8,8 +8,8 @@ function Home() {
         <div className="profile-left ">
           <img className="profile-img" src="/images/Y.png" alt="" />
         </div>
-        <div className="profile-right">
-          <div className="about-me">
+        <div className="flex flex-col m-[50px] lg:w-[750px]">
+          <div className="flex flex-col items-center justify-center text-center">
             <h1 className="uppercase m-4">Welcome</h1>
             <p className="text-lg md:text-2xl mt-4">
               My journey as a software developer began at Dev Academy, a
