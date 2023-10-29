@@ -61,6 +61,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.14.5",
+    "framer-motion": "^10.16.4",
     "react-icons": "^4.10.1",
     "react-pdf": "^7.4.0",
     "react-scroll-motion": "^0.3.2"
