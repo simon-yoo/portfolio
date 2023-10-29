@@ -3,7 +3,7 @@ import Project from './Project'
 
 function Projects() {
   return (
-    <div className="pb-[200px]">
+    <div className="pb-[200px] h-full">
       <div className=" flex justify-center">
         <div className="flex rounded-lg justify-center items-center border-4 p-4 w-[150px] border-browny cursor-pointer duration-700 hover:scale-110 hover:bg-browny hover:text-d_color my-[100px]">
           <Link
