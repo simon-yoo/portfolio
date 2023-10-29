@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
       <div className="flex justify-center">
         <img className="contact-img" src="/images/Y.png" alt="" />
       </div>
-      <div className="form-container">
+      <div className="form-container ">
         <form onSubmit={sendEmail} ref={form} className="form">
           <label htmlFor="name"></label>
           <input

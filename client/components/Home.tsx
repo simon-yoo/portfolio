@@ -1,10 +1,12 @@
 import { BiLogoJavascript, BiLogoReact, BiLogoNodejs } from 'react-icons/bi'
 import { TbBrandTypescript } from 'react-icons/tb'
+import Projects from './Projects'
+import Contact from './Contact'
 
 function Home() {
   return (
     <div>
-      <div className="profile">
+      <div className="profile shadow-2xl">
         <div className="profile-left ">
           <img className="profile-img" src="/images/Y.png" alt="" />
         </div>
@@ -25,6 +27,7 @@ function Home() {
               create innovative solutions together.
             </p>
           </div>
+
           <div className="icon-skills">
             <BiLogoNodejs className="skill" size={40} color={'#403d39'} />
             <BiLogoJavascript className="skill" size={40} color={'#403d39'} />
@@ -32,6 +35,12 @@ function Home() {
             <TbBrandTypescript className="skill" size={40} color={'#403d39'} />
           </div>
         </div>
+      </div>
+      <div className="shadow-2xl">
+        <Projects />
+      </div>
+      <div className=" shadow-2xl  ">
+        <Contact />
       </div>
     </div>
   )
