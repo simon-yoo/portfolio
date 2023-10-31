@@ -1,13 +1,6 @@
 # React Boilerplate
 
-## Packages Included
-
-- react
-- react-router-dom
-- express
-- vite
-- vitest
-- eslint
+Currently editing portforlio...
 
 ## Setup
 
